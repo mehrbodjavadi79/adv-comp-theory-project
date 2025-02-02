@@ -10,8 +10,6 @@ def decode(n: int) -> tuple[int, int]:
     y = (n-1)//2
     return x, y
 
-
-
 def get_variable(n: int) -> str:
     if n == 0:
         return "Y"
