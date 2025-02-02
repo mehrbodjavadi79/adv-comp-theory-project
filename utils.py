@@ -38,9 +38,9 @@ def get_line_code(label: int, variable: int, intruction: int) -> int:
     return code(label, code(variable, intruction))
 
 def get_line_code_inv(line_code: int) -> tuple[int, int, int]:
-    label, variction = decode(line_code)
-    variable, intruction = decode(variction)
-    return label, variable, intruction
+    label, instable = decode(line_code)
+    intruction, variable = decode(instable)
+    return label, intruction, variable
 
 def log_snapshot(i: int, snapshot: list[int]):
     print(i, end=" ")
