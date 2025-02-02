@@ -15,8 +15,6 @@ X_MAX = get_max_X(lines)
 Z_MAX = get_max_Z(lines)
 snapshot = get_start_snapshot(lines, inputs)
 i=1 # the current line index which is going to be executed
-step = 0
-MAX_STEPS = 1000000
 
 
 while True:
@@ -45,7 +43,3 @@ while True:
                 break
         else:
             i += 1
-    
-    step += 1
-    if step > MAX_STEPS:
-        break
