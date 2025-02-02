@@ -14,7 +14,7 @@ for code_line in code_lines:
 X_MAX = get_max_X(lines)
 Z_MAX = get_max_Z(lines)
 snapshot = get_start_snapshot(lines, inputs)
-i=1 # the current line which is going to be executed
+i=1 # the current line index which is going to be executed
 step = 0
 MAX_STEPS = 1000000
 
@@ -42,7 +42,7 @@ while True:
             if next_i != None:
                 i = next_i
             else:
-                break # todo
+                break
         else:
             i += 1
     
