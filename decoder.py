@@ -20,4 +20,4 @@ for code_line in code_lines:
         v = get_variable(variable)
         tagretLabel: int = instruction-2
         line += f"IF {v} != 0 GOTO {get_label(tagretLabel)}"
-    print(line, "h9")
+    print(line)
